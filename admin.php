@@ -42,7 +42,7 @@ $pdo->exec("
 $stmt = $pdo->prepare("SELECT COUNT(*) FROM admin_users WHERE login = 'admin'");
 $stmt->execute();
 if ($stmt->fetchColumn() == 0) {
-    $pdo->prepare("INSERT INTO admin_users (login, password_hash) VALUES ('admin', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi')")->execute();
+    $pdo->prepare("INSERT INTO admin_users (login, password_hash) VALUES ('admin', '$2y$10$Ad5Gf9JlKt7L3DGxSF9jtON6eawzDNBsuvjFncsKTCAKSImWdXgCu')")->execute();
 }
 
 if (empty($_SERVER['PHP_AUTH_USER']) || empty($_SERVER['PHP_AUTH_PW'])) {
