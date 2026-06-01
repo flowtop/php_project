@@ -180,7 +180,7 @@ document.addEventListener('DOMContentLoaded', function() {
             modalResult.style.background = '#e3f2fd';
             
             try {
-                const response = await fetch('/web_backend_8/api.php', {
+                const response = await fetch('/php_project/api.php', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(data)
@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             Заявка принята!<br><br>
                             <strong>Логин:</strong> ${result.login}<br>
                             <strong>Пароль:</strong> ${result.password}<br><br>
-                            <a href="/web_backend_8/edit.php" target="_blank">Редактировать заявку</a>
+                            <a href="/php_project/edit.php" target="_blank">Редактировать заявку</a>
                         </div>
                     `;
                     modalResult.style.background = '#d4edda';
@@ -237,7 +237,7 @@ document.addEventListener('DOMContentLoaded', function() {
             apiResult.style.background = '#e3f2fd';
             
             try {
-                const response = await fetch('/web_backend_8/api.php', {
+                const response = await fetch('/php_project/api.php', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(data)
@@ -250,7 +250,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             Заявка принята!<br><br>
                             <strong>Логин:</strong> ${result.login}<br>
                             <strong>Пароль:</strong> ${result.password}<br><br>
-                            <a href="/web_backend_8/edit.php" target="_blank">Редактировать заявку</a>
+                            <a href="/php_project/edit.php" target="_blank">Редактировать заявку</a>
                         </div>
                     `;
                     apiResult.style.background = '#d4edda';
