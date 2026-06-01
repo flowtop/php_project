@@ -1,8 +1,8 @@
 <?php
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'u82564');
-define('DB_USER', 'u82564');
-define('DB_PASS', '1341640');
+define('DB_NAME', 'u82813');
+define('DB_USER', 'u82813');
+define('DB_PASS', '4313992');
 
 function getDBConnection() {
     static $pdo = null;
